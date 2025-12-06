@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd
 import random
 
-st.title('こうゆう学園1問1答')
+st.title('こうゆう学院1問1答')
 # 問題データ(csv形式)読み込み
-df = pd.read_csv('4_M-18_こうゆう学園.csv')
+df = pd.read_csv('4_M-18_こうゆう学院.csv')
 # シード値を固定し問題をシャッフル。ボタンを押すたびに再サンプリングを行なわないようにするための処置。
 value = st.sidebar.slider('問題シャッフルパターン', 0, 100, help='0はシャッフルなし')
 random.seed(value)
